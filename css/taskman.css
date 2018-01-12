@@ -1,0 +1,19 @@
+/* Sets the font size and family for all text */
+.content {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+/* Sets the display and padding for text class elements */
+.tasks {
+    display: block;
+    padding-top: 10px;
+}
+/* Makes the action text of tasks bold */
+text {
+    font-weight: bold;
+}
+/* Sets padding between the edit form and task list */
+#editForm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
