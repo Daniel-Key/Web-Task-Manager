@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="lib/moment.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/view.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/taskman.css"/>
+</head>
+<body>
+
+<header>
+
+</header>
+
+<div class="content">
+
+    <div id="toolbar">
+        <button id="addNew">(+) Add</button>
+    </div>
+    <div style="clear:both"></div>
+    <div id="editForm">
+        <form id="newTask">
+            <label for="action">Action</label>
+            <input type="text" id="action" placeholder="describe the todo item" required/>
+            <label for="done">Done</label>
+            <input type="checkbox" id="done"/>
+            <label for="dueDate">Due date</label>
+            <input type="date" id="dueDate"/>
+            <button id="submit">Save</button>
+        </form>
+    </div>
+    <div class="tasks" id="taskList">
+
+        <!-- Example of how tasks should be rendered
+        <div id="task1" class="task">
+            <input type="checkbox"/>
+            <span class="action">buy eggs, toast, milk, tea</span>
+            <button id="task1edit">Edit</button>
+            <button id="task1delete">Delete</button>
+        </div>
+        -->
+    </div>
+
+</div>
+
+<footer>
+
+</footer>
+
+</body>
+
+<script>
+    $(function() {
+        controller.init();
+    });
+</script>
+
+</html>
